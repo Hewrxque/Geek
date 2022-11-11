@@ -6,7 +6,6 @@ function App() {
       <div className="container-login">
       <div className="wrap-login">
         <form className="login-form">
-        <span className="login-form-title">Bem vindo</span>
         <span className="login-form-title">
           <img src={IMG} alt= "Geek"/>
         </span>
