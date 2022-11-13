@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import IMG from '../assets/geek.svg';
-import '../styles.css';
+import IMG from '../../assets/geek.svg';
+import './styles.css';
 
 export default function Login() {
         return (
