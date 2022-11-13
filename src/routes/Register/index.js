@@ -17,7 +17,6 @@ export default function RegisterRoutes(props) {
                     </Protected>
                 }
             />
-            <Route path="*" element={<h1>Página não encontrada</h1>} />
         </Routes>
     );
 }

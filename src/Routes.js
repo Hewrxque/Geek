@@ -18,6 +18,9 @@ export default function AppRoutes(props) {
     return (
         <>
             <Routes>
+                <Route path={API_URL + '/'} element={<IndexLayout />}>
+                    <Route index element={<Enter />} />
+                </Route>
                 <Route path={API_URL + '/login'} element={<IndexLayout />}>
                     <Route index element={<Login />} />
                 </Route>
