@@ -6,9 +6,8 @@ import { Link } from 'react-router-dom';
 
 export default function Registration() {
     return (
-<<<<<<< HEAD
         <div className="container">
-            <div className="container-login">
+        <div className="container-login">
                 <div className="wrap-login">
                     <form className="login-form">
                         <span className="login-form-title">
@@ -17,21 +16,6 @@ export default function Registration() {
                         <span className="login-form-t">Nome completo</span>
                         <div className="wrap-input">
                             <input className="input" type="Nome completo" />
-=======
-        <div className="wrap-login">
-            <form className="login-form">
-                <button style={{ backgroundColor: 'transparent', border: 'none' }}>
-                    <Link to={`/login`} style={{ border: 'none', color: 'white', textDecoration: "none" }}>
-                        ←
-                    </Link>
-                </button>
-                <span className="login-form-title">
-                    <img src={IMG} alt="Geek" />
-                </span>
-                <span className="login-form-t">Nome completo</span>
-                <div className="wrap-input">
-                    <input className="input" type="Nome completo" />
->>>>>>> d90ef0f3719e697cab4ada8bd4726ae24ee2ed15
 
                             <span className="focus-input" data-placeholder="Nome completo"></span>
                         </div>
@@ -67,7 +51,7 @@ export default function Registration() {
                         </div>
                     </form>
                 </div>
-            </div>
-        </div>
+                </div>
+                </div>
     );
 }

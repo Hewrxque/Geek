@@ -1,3 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container-login {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 1px;
+    background-color: #4b0082;
+    justify-content: center;
+    position: relative;
+}
+
+.wrap-login {
+    width: 439px;
+    height: 782px;
+    background-color: #4b0082;
+    border-radius: 20px;
+    justify-content: center;
+
+    overflow: hidden;
+    padding: 77px 55px 33px 55px;
+    box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
 .login-form{
     width: 100%
 }

@@ -2,7 +2,7 @@
 import IMG from '../../assets/geek.svg';
 import './styles.css';
 
-export default function Registration() {
+export default function Enter() {
     return (
         <div className="container">
             <div className="container-login">

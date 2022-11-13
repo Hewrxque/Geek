@@ -5,7 +5,8 @@ import './styles.css';
 export default function Login() {
     return (
         <div className="container">
-            <div className="container-login">
+        <div className="container-login">
+           
                 <div className="wrap-login">
                     <form className="login-form">
                         <span className="login-form-title">
@@ -32,24 +33,7 @@ export default function Login() {
                         </a>
                     </form>
                 </div>
-<<<<<<< HEAD
-            </div>
-=======
-                <span className="login-form-t">Senha</span>
-                <div className="wrap-input">
-                    <input className="input" type="password" />
-                    <span className="focus-input" data-placeholder="Password"></span>
                 </div>
-                <div className="container-login-form-btn">
-                    <button className="login-form-btn">Login</button>
                 </div>
-                <div className="text-center"></div>
-                <span className="txt1">Não possui cadastro?{'  '}</span>
-                <a style={{color: 'white'}} href="/register">
-                    Criar cadastro
-                </a>
-            </form>
->>>>>>> d90ef0f3719e697cab4ada8bd4726ae24ee2ed15
-        </div>
     );
 }
