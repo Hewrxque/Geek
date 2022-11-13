@@ -24,8 +24,8 @@ export default function Login() {
                     <button className="login-form-btn">Login</button>
                 </div>
                 <div className="text-center"></div>
-                <span className="txt1">Não possui cadastro?</span>
-                <a className="txt2" href="#">
+                <span className="txt1">Não possui cadastro?{'  '}</span>
+                <a style={{color: 'white'}} href="/register">
                     Criar cadastro
                 </a>
             </form>

@@ -2,10 +2,17 @@
 import IMG from '../../assets/geek.svg';
 import './styles.css';
 
+import { Link } from 'react-router-dom';
+
 export default function Registration() {
     return (
         <div className="wrap-login">
             <form className="login-form">
+                <button style={{ backgroundColor: 'transparent', border: 'none' }}>
+                    <Link to={`/login`} style={{ border: 'none', color: 'white', textDecoration: "none" }}>
+                        ←
+                    </Link>
+                </button>
                 <span className="login-form-title">
                     <img src={IMG} alt="Geek" />
                 </span>
