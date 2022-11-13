@@ -17,11 +17,12 @@ export default function AppRoutes(props) {
     return (
         <>
             <Routes>
-                <Route path={API_URL + '/'} element={<IndexLayout />}>
+                <Route path={API_URL + '/login'} element={<IndexLayout />}>
                     <Route index element={<Login />} />
                 </Route>
+
                 <Route path={API_URL + '/register'} element={<Register />} />
-               
+                <Route path="*" element={<h1>Página não encontrada</h1>} />
             </Routes>
         </>
     );

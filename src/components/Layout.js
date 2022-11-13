@@ -1,10 +1,16 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
 
+import '../styles.css';
+
 export default function Index() {
     return (
         <>
-            <Outlet />
+            <div className="container">
+                <div className="container-login">
+                    <Outlet />
+                </div>
+            </div>
         </>
     );
 }
