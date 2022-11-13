@@ -1,4 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
+import { Link } from 'react-router-dom';
 import IMG from '../../assets/geek.svg';
 import './styles.css';
 
@@ -13,10 +14,21 @@ export default function Enter() {
                         </span>
 
                         <div className="container-login-form-btn">
-                            <button className="CC-form-btn">Login</button>
+                            <button className="CC-form-btn">
+                                <Link to={`/login`} style={{ border: 'none', color: 'white', textDecoration: 'none' }}>
+                                    Login
+                                </Link>
+                            </button>
                         </div>
                         <div className="container-login-form-btn">
-                            <button className="CC-form-btn">Criar Conta</button>
+                            <button className="CC-form-btn">
+                                <Link
+                                    to={`/register`}
+                                    style={{ border: 'none', color: 'white', textDecoration: 'none' }}
+                                >
+                                    Criar Conta
+                                </Link>
+                            </button>
                         </div>
                     </form>
                 </div>

@@ -7,9 +7,14 @@ import { Link } from 'react-router-dom';
 export default function Registration() {
     return (
         <div className="container">
-        <div className="container-login">
+            <div className="container-login">
                 <div className="wrap-login">
                     <form className="login-form">
+                        <button style={{ backgroundColor: 'transparent', border: 'none' }}>
+                            <Link to={`/login`} style={{ border: 'none', color: 'white', textDecoration: 'none' }}>
+                                ←
+                            </Link>
+                        </button>
                         <span className="login-form-title">
                             <img src={IMG} alt="Geek" />
                         </span>
@@ -51,7 +56,7 @@ export default function Registration() {
                         </div>
                     </form>
                 </div>
-                </div>
-                </div>
+            </div>
+        </div>
     );
 }

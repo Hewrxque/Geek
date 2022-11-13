@@ -6,7 +6,7 @@ import Protected from '../RouterProtected';
 //PAGES
 import Enter from '../../pages/Enter';
 
-export default function LoginRoutes(props) {
+export default function EnterRoutes(props) {
     return (
         <Routes>
             <Route

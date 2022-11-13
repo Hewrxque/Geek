@@ -9,22 +9,20 @@ import IndexLayout from './components/Layout';
 //MENUS PAGE
 /* import Index from './routes/homeRoutes'; */
 import Login from './routes/Login';
-import Register from './routes/Register'
+import Register from './routes/Register';
 import Enter from './routes/Enter';
 //import Loginpage from './pages/Login'
-
 
 export default function AppRoutes(props) {
     return (
         <>
             <Routes>
+                <Route path={API_URL + '/'} element={<IndexLayout />}>
+                    <Route index element={<Enter />} />
+                </Route>
                 <Route path={API_URL + '/login'} element={<IndexLayout />}>
                     <Route index element={<Login />} />
                 </Route>
-                <Route path={API_URL + '/enter'} element={<IndexLayout />}>
-                    <Route index element={<Enter />} />
-                </Route>
-
 
                 <Route path={API_URL + '/register'} element={<Register />} />
                 <Route path="*" element={<h1>Página não encontrada</h1>} />
