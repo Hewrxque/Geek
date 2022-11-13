@@ -9,7 +9,7 @@
     margin: 0 auto;
 }
 
-.container-login {
+.container-register {
     width: 100%;
     min-height: 100vh;
     display: flex;
@@ -21,7 +21,7 @@
     position: relative;
 }
 
-.wrap-login {
+.wrap-register {
     width: 439px;
     height: 782px;
     background-color: #4b0082;
@@ -33,12 +33,12 @@
     box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.2);
 }
 
-.login-form{
+.register-form{
     width: 100%
 }
 
 
-.login-form-title{
+.register-form-title{
     display: block;
     font-size: 10px;
     color: azure;
@@ -47,15 +47,15 @@
     text-align: center;
 
 }
-.login-form-t{
+.register-form-t{
     display: block;
     font-size: 15px;
     color: azure;
     line-height: 1.2;
-    text-align: center;
+   
 
 }
-.login-form-title img{
+.register-form-title img{
     width: 90px;
 }
 .wrap-input{
@@ -131,13 +131,13 @@ color: #adadad;
     outline: 0;
 
 }
-.container-login-form-btn{
+.container-register-form-btn{
     display: flex;
     width: 100%;
     justify-content: center;
     margin-bottom: 50px;
 }
-.CC-form-btn {
+.register-form-btn {
     appearance: button;
     backface-visibility: hidden;
     background-color: #FF9900;
@@ -166,10 +166,10 @@ color: #adadad;
     width: 130px;
   }
 
-  .CC-form-btn:disabled {
+  .register-form-btn:disabled {
     cursor: default;
   }
   
-  .CC-form-btn:focus {
+  .register-form-btn:focus {
     box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
   }

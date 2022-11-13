@@ -4,20 +4,19 @@ import { Route, Routes } from 'react-router-dom';
 import Protected from '../RouterProtected';
 
 //PAGES
-import Register from '../../pages/Register';
+import Home from '../../pages/Home';
 
-export default function RegisterRoutes(props) {
+export default function LoginRoutes(props) {
     return (
         <Routes>
             <Route
                 index
                 element={
                     <Protected>
-                        <Register />
+                        <Home />
                     </Protected>
                 }
             />
-            <Route path="*" element={<h1>Página não encontrada</h1>} />
         </Routes>
     );
 }

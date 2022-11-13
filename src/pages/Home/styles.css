@@ -9,35 +9,35 @@ margin: 0 auto;
 
 
 }
-.container-login{
+.container-Home{
     width: 100%;
     min-height:  100vh;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    padding: 1px;
+    padding: 15px;
     background-color: 
     #4B0082;
     justify-content: center;
     position: relative;
     
 }
-.wrap-login{
+.wrap-Home{
     display: flex;
-    width: 439px;
+    width: 1234px;
     height: 782px;
     background-color: #4B0082;
     border-radius: 20px;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    padding: 77px 55px 33px 55px;
+    padding: 10px;
     box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.2);
 }
-.login-form{
+.Home-form{
     width: 100%
 }
-.login-form-title{
+.Home-form-title{
     display: block;
     font-size: 10px;
     color: azure;
@@ -46,17 +46,17 @@ margin: 0 auto;
     text-align: center;
 
 }
-.login-form-t{
+.Home-form-t{
     display: block;
     font-size: 15px;
     color: azure;
     line-height: 1.2;
-   
-    
+    padding-right: 230px;
+    text-align: center;
 
 }
-.login-form-title img{
-    width: 90px;
+.Home-form-title img{
+    width: 60px;
 }
 .wrap-input{
     width: 100%;
@@ -131,13 +131,13 @@ color: #adadad;
     outline: 0;
 
 }
-.container-login-form-btn{
+.container-Home-form-btn{
     display: flex;
     width: 100%;
     justify-content: center;
     margin-bottom: 50px;
 }
-.login-form-btn {
+  .Home-form-btn{
     appearance: button;
     backface-visibility: hidden;
     background-color: #FF9900;
@@ -148,8 +148,8 @@ color: #adadad;
     color: #fff;
     cursor: pointer;
     font-family: -apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Ubuntu,sans-serif;
-    font-size: 100%;
-    height: 44px;
+    font-size: 15px;
+    height: 130px;
     line-height: 1.15;
     margin: 12px 0 0;
     outline: none;
@@ -163,20 +163,13 @@ color: #adadad;
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
-    width: 30%;
+    width: 285px;
+
   }
-  
-  .login-form-btn:disabled {
+  .Home-form-btn:disabled {
     cursor: default;
   }
   
-  .login-form-btn:focus {
+  .Home-form-btn:focus {
     box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
-  }
-
-  .txt1{
-    color: #fff;
-  }
-  .txt2{
-    color: #FF9900;
   }
