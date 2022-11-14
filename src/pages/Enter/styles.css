@@ -135,7 +135,7 @@ color: #adadad;
     display: flex;
     width: 100%;
     justify-content: center;
-    margin-bottom: 50px;
+    margin-bottom: 3px;
 }
   .Enter-form-btn{
     appearance: button;
