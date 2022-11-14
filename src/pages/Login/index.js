@@ -18,13 +18,13 @@ export default function Login() {
                             <img src={IMG} alt="Geek" />
                         </span>
                         <span className="login-form-t">E-mail</span>
-                        <div className="wrap-input">
+                        <div className="wrap-input2">
                             <input className="input" type="email" />
 
                             <span className="focus-input" data-placeholder="Email"></span>
                         </div>
                         <span className="login-form-t">Senha</span>
-                        <div className="wrap-input">
+                        <div className="wrap-input2">
                             <input className="input" type="password" />
                             <span className="focus-input" data-placeholder="Password"></span>
                         </div>

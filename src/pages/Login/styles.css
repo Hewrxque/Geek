@@ -58,11 +58,11 @@ margin: 0 auto;
 .login-form-title img{
     width: 90px;
 }
-.wrap-input{
+.wrap-input2{
     width: 100%;
     position: relative;
     border-bottom: 2px solid #adadad;
-    margin-bottom: 37px;
+    margin-bottom: 12px;
     background-color: #fff;
     border-radius: 10px;
 }

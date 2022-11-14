@@ -6,11 +6,9 @@ import '../styles.css';
 export default function Index() {
     return (
         <>
-            <div className="container">
-                <div className="container-login">
+    
                     <Outlet />
-                </div>
-            </div>
+               
         </>
     );
 }
