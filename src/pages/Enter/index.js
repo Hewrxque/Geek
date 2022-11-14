@@ -14,11 +14,21 @@ export default function Enter() {
                         </span>
 
                         <div className="container-Enter-form-btn">
-                            
-                            <button className="Enter-form-btn">Login</button>
+                            <button className="Enter-form-btn">
+                                <Link to={`/login`} style={{ border: 'none', color: 'white', textDecoration: 'none' }}>
+                                    Login
+                                </Link>
+                            </button>
                         </div>
                         <div className="container-Enter-form-btn">
-                            <button className="Enter-form-btn">Criar Conta</button>
+                            <button className="Enter-form-btn">
+                                <Link
+                                    to={`/register`}
+                                    style={{ border: 'none', color: 'white', textDecoration: 'none' }}
+                                >
+                                    Criar Conta
+                                </Link>
+                            </button>
                         </div>
                     </form>
                 </div>

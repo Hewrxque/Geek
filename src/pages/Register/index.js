@@ -7,9 +7,14 @@ import { Link } from 'react-router-dom';
 export default function Register() {
     return (
         <div className="container">
-        <div className="container-register">
+            <div className="container-register">
                 <div className="wrap-register">
                     <form className="register-form">
+                        <button style={{ backgroundColor: 'transparent', border: 'none' }}>
+                            <Link to={`/`} style={{ border: 'none', color: 'white', textDecoration: 'none' }}>
+                                ←
+                            </Link>
+                        </button>
                         <span className="register-form-title">
                             <img src={IMG} alt="Geek" />
                         </span>
