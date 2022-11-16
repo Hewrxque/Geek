@@ -12,6 +12,7 @@ import Login from './routes/Login';
 import Register from './routes/Register';
 import Enter from './routes/Enter';
 import Home from './pages/Home';
+import Events from './pages/Events';
 //import Loginpage from './pages/Login'
 
 export default function AppRoutes(props) {
@@ -31,6 +32,9 @@ export default function AppRoutes(props) {
                 
                 <Route path={API_URL + '/home'} element={<IndexLayout />}>
                     <Route index element={<Home />} />
+                </Route>
+                <Route path={API_URL + '/events'} element={<IndexLayout />}>
+                    <Route index element={<Events />} />
                 </Route>
 
                 <Route path={API_URL + '/register'} element={<Register />} />
