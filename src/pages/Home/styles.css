@@ -133,9 +133,8 @@ color: #adadad;
 }
 .container-Home-form-btn{
     display: flex;
-    width: 100%;
+    width: 50%;
     justify-content: center;
-    margin-bottom: 5px;
 }
   .Home-form-btn{
     appearance: button;
