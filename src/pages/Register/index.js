@@ -1,19 +1,20 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
+import { useNavigate } from 'react-router-dom';
 import IMG from '../../assets/geek.svg';
 import './styles.css';
 
-import { Link } from 'react-router-dom';
 
 export default function Register() {
+    const navigate = useNavigate();
     return (
         <div className="container">
             <div className="container-register">
                 <div className="wrap-register">
                     <form className="register-form">
-                        <button style={{ backgroundColor: 'transparent', border: 'none' }}>
-                            <Link to={`/`} style={{ border: 'none', color: 'white', textDecoration: 'none' }}>
+                        <button onClick={() => navigate("/", {replace: true})} style={{ backgroundColor: "transparent", border: 'none', color: 'white', textDecoration: 'none' }}>
+                           {/*  <Link to={`/`} style={{ border: 'none', color: 'white', textDecoration: 'none' }}> */}
                                 ←
-                            </Link>
+                          {/*   </Link> */}
                         </button>
                         <span className="register-form-title">
                             <img src={IMG} alt="Geek" />
@@ -58,7 +59,7 @@ export default function Register() {
                             <span className="focus-input" data-placeholder="Perfil"></span>
                         </div>
                         <div className="container-register-form-btn">
-                            <button className="register-form-btn">Criar Conta</button>
+                            <button onClick={() => navigate("/home", {replace: true})} className="register-form-btn">Criar Conta</button>
                         </div>
                     </form>
                 </div>

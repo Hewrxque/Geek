@@ -1,9 +1,10 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import IMG from '../../assets/geek.svg';
 import './styles.css';
 
 export default function Enter() {
+    const navigate = useNavigate();
     return (
         <div className="container">
             <div className="container-Enter">
@@ -14,20 +15,13 @@ export default function Enter() {
                         </span>
 
                         <div className="container-Enter-form-btn">
-                            <button className="Enter-form-btn">
-                                <Link to={`/login`} style={{ border: 'none', color: 'white', textDecoration: 'none' }}>
-                                    Login
-                                </Link>
+                            <button onClick={() => navigate('/login', { replace: true })} className="Enter-form-btn">
+                                Login
                             </button>
                         </div>
                         <div className="container-Enter-form-btn">
-                            <button className="Enter-form-btn">
-                                <Link
-                                    to={`/register`}
-                                    style={{ border: 'none', color: 'white', textDecoration: 'none' }}
-                                >
-                                    Criar Conta
-                                </Link>
+                            <button onClick={() => navigate('/register', { replace: true })} className="Enter-form-btn">
+                                Criar Conta
                             </button>
                         </div>
                     </form>

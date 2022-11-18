@@ -1,8 +1,10 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
+import { useNavigate } from 'react-router-dom';
 import IMG from '../../assets/geek.svg';
 import './styles.css';
 
 export default function Home() {
+    const navigate = useNavigate();
     return (
         <div className="container">
             <div className="container-Home">
@@ -22,7 +24,7 @@ export default function Home() {
                                 height: '100%',
                                 whiteSpace: 'normal',
                                 flexFlow: 'row wrap',
-                                flexWrap: 'wrap',   
+                                flexWrap: 'wrap',
                                 alignItems: 'center'
                             }}
                         >
@@ -38,7 +40,11 @@ export default function Home() {
                             <div className="container-Home-form-btn" style={{ padding: '5px' }}>
                                 <button className="Home-form-btn">Perfil</button>
                             </div>
-                            <div className="container-Home-form-btn" style={{ padding: '5px' }}>
+                            <div
+                                onClick={() => navigate('/', { replace: true })}
+                                className="container-Home-form-btn"
+                                style={{ padding: '5px' }}
+                            >
                                 <button className="Home-form-btn">Sair</button>
                             </div>
                         </div>
