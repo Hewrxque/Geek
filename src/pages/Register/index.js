@@ -3,7 +3,6 @@ import { useNavigate } from 'react-router-dom';
 import IMG from '../../assets/geek.svg';
 import './styles.css';
 
-
 export default function Register() {
     const navigate = useNavigate();
     return (
@@ -11,10 +10,16 @@ export default function Register() {
             <div className="container-register">
                 <div className="wrap-register">
                     <form className="register-form">
-                        <button onClick={() => navigate("/", {replace: true})} style={{ backgroundColor: "transparent", border: 'none', color: 'white', textDecoration: 'none' }}>
-                           {/*  <Link to={`/`} style={{ border: 'none', color: 'white', textDecoration: 'none' }}> */}
-                                ←
-                          {/*   </Link> */}
+                        <button
+                            onClick={() => navigate('/', { replace: true })}
+                            style={{
+                                backgroundColor: 'transparent',
+                                border: 'none',
+                                color: 'white',
+                                textDecoration: 'none'
+                            }}
+                        >
+                            ←
                         </button>
                         <span className="register-form-title">
                             <img src={IMG} alt="Geek" />
@@ -59,7 +64,9 @@ export default function Register() {
                             <span className="focus-input" data-placeholder="Perfil"></span>
                         </div>
                         <div className="container-register-form-btn">
-                            <button onClick={() => navigate("/home", {replace: true})} className="register-form-btn">Criar Conta</button>
+                            <button onClick={() => navigate('/home', { replace: true })} className="register-form-btn">
+                                Criar Conta
+                            </button>
                         </div>
                     </form>
                 </div>
