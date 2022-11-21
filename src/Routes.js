@@ -12,7 +12,8 @@ import Login from './routes/Login';
 import Register from './routes/Register';
 import Enter from './routes/Enter';
 import Home from './pages/Home';
-//import Loginpage from './pages/Login'
+import Subscription from './pages/Subscription';
+
 
 export default function AppRoutes(props) {
     return (
@@ -32,7 +33,7 @@ export default function AppRoutes(props) {
                 <Route path={API_URL + '/home'} element={<IndexLayout />}>
                     <Route index element={<Home />} />
                 </Route>
-
+                <Route path={API_URL + '/subscription'} element={<Subscription />} />
                 <Route path={API_URL + '/register'} element={<Register />} />
                 <Route path="*" element={<h1>Página não encontrada</h1>} />
             </Routes>

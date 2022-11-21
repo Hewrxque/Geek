@@ -7,7 +7,7 @@
     width: 100%;
     margin: 0 auto;
 }
-.container-Enter {
+.container-Subscription {
     width: 100%;
     min-height: 100vh;
     display: flex;
@@ -18,9 +18,9 @@
     justify-content: center;
     position: relative;
 }
-.wrap-Enter {
+.wrap-Subscription {
     display: flex;
-    width: 439px;
+    width: 1234px;
     height: 782px;
     background-color: #4b0082;
     border-radius: 20px;
@@ -30,29 +30,50 @@
     padding: 10px;
     box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.2);
 }
-.Enter-form {
+.Subscription-form {
     width: 100%;
 }
-.Enter-form-title {
+.Subscription-form-title2 {
     display: block;
     font-size: 10px;
     color: azure;
 
     line-height: 1.2;
-    text-align: center;
 }
-.Enter-form-t {
+.Subscription-form-title2 {
     display: block;
-    font-size: 15px;
+    font-size: 10px;
+    color: azure;
+    align-items: center;
+    line-height: 1.2;
+}
+.Subscription-form-t {
+    display: block;
+    font-size: 48px;
     color: azure;
     line-height: 1.2;
-    padding-right: 230px;
     text-align: center;
+
+    padding-right: 615px;
+    padding-top: 75px;
 }
-.Enter-form-title img {
-    width: 270px;
+.Subscription-form-t2 {
+    display: block;
+    font-size: 48px;
+    color: azure;
+    line-height: 1.2;
+    text-align: center;
+    padding-top: 25px;
 }
-.wrap-input {
+.Subscription-form-title img {
+    width: 60px;
+    padding-bottom: 15px;
+}
+.Subscription-form-title2 img {
+    width: 300px;
+    padding-bottom: 15px;
+}
+.wrap-input3 {
     width: 100%;
     position: relative;
     border-bottom: 2px solid #adadad;
@@ -121,17 +142,16 @@
 .input:focus {
     outline: 0;
 }
-.container-Enter-form-btn {
+.Subscription-Home-form-btn {
     display: flex;
-    width: 100%;
+    width: 50%;
     justify-content: center;
-    margin-bottom: 3px;
 }
-.Enter-form-btn {
+.Subscription-form-btn {
     appearance: button;
     backface-visibility: hidden;
     background-color: #ff9900;
-    border-radius: 6px;
+    border-radius: 10px;
     border-width: 0;
     box-shadow: rgba(50, 50, 93, 0.1) 0 0 0 1px inset, rgba(50, 50, 93, 0.1) 0 2px 5px 0,
         rgba(0, 0, 0, 0.07) 0 1px 1px 0;
@@ -139,8 +159,8 @@
     color: #fff;
     cursor: pointer;
     font-family: -apple-system, system-ui, 'Segoe UI', Roboto, 'Helvetica Neue', Ubuntu, sans-serif;
-    font-size: 15px;
-    height: 38px;
+    font-size: 35px;
+    height: 160px;
     line-height: 1.15;
     margin: 12px 0 0;
     outline: none;
@@ -154,13 +174,13 @@
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
-    width: 129px;
+    width: 400px;
 }
-.Enter-form-btn:disabled {
+.Subscription-form-btn:disabled {
     cursor: default;
 }
 
-.Enter-form-btn:focus {
+.Subscription-form-btn:focus {
     box-shadow: rgba(50, 50, 93, 0.1) 0 0 0 1px inset, rgba(50, 50, 93, 0.2) 0 6px 15px 0,
         rgba(0, 0, 0, 0.1) 0 2px 2px 0, rgba(50, 151, 211, 0.3) 0 0 0 4px;
 }
