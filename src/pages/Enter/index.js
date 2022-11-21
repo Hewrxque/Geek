@@ -10,7 +10,6 @@ export default function Enter() {
             <div className="container-Enter">
                 <div className="wrap-Enter">
                     <form className="Enter-form">
-
                         <span className="Enter-form-title">
                             <img src={IMG} alt="Geek" />
                         </span>
@@ -25,7 +24,6 @@ export default function Enter() {
                                 Criar Conta
                             </button>
                         </div>
-                        
                     </form>
                 </div>
             </div>

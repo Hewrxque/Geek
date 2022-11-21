@@ -29,17 +29,15 @@ export default function Home() {
                             }}
                         >
                             <div className="container-Home-form-btn" style={{ padding: '5px' }}>
-                                <button className="Home-form-btn">Eventos</button>
+                                <button className="Home-form-btn">Inscrição</button>
                             </div>
                             <div className="container-Home-form-btn" style={{ padding: '5px' }}>
                                 <button className="Home-form-btn">Feed</button>
                             </div>
                             <div className="container-Home-form-btn" style={{ padding: '5px' }}>
-                                <button className="Home-form-btn">Menu</button>
+                                <button className="Home-form-btn">Parceiros</button>
                             </div>
-                            <div className="container-Home-form-btn" style={{ padding: '5px' }}>
-                                <button className="Home-form-btn">Perfil</button>
-                            </div>
+
                             <div
                                 onClick={() => navigate('/', { replace: true })}
                                 className="container-Home-form-btn"

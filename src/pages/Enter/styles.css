@@ -4,29 +4,25 @@
     box-sizing: border-box;
 }
 .container {
-width: 100%;
-margin: 0 auto;
-
-
-}
-.container-Enter{
     width: 100%;
-    min-height:  100vh;
+    margin: 0 auto;
+}
+.container-Enter {
+    width: 100%;
+    min-height: 100vh;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     padding: 15px;
-    background-color: 
-    #4B0082;
+    background-color: #2e0050;
     justify-content: center;
     position: relative;
-    
 }
-.wrap-Enter{
+.wrap-Enter {
     display: flex;
     width: 439px;
     height: 782px;
-    background-color: #4B0082;
+    background-color: #4b0082;
     border-radius: 20px;
     justify-content: center;
     align-items: center;
@@ -34,31 +30,29 @@ margin: 0 auto;
     padding: 10px;
     box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.2);
 }
-.Enter-form{
-    width: 100%
+.Enter-form {
+    width: 100%;
 }
-.Enter-form-title{
+.Enter-form-title {
     display: block;
     font-size: 10px;
     color: azure;
 
     line-height: 1.2;
     text-align: center;
-
 }
-.Enter-form-t{
+.Enter-form-t {
     display: block;
     font-size: 15px;
     color: azure;
     line-height: 1.2;
     padding-right: 230px;
     text-align: center;
-
 }
-.Enter-form-title img{
+.Enter-form-title img {
     width: 205px;
 }
-.wrap-input{
+.wrap-input {
     width: 100%;
     position: relative;
     border-bottom: 2px solid #adadad;
@@ -66,7 +60,7 @@ margin: 0 auto;
     background-color: #fff;
     border-radius: 10px;
 }
-.input{
+.input {
     font-size: 15px;
     color: black;
     line-height: 1.2;
@@ -80,21 +74,20 @@ margin: 0 auto;
 
     padding: 0 5px;
 }
-.focus-input{
-position: absolute;
-display: block;
-width: 100%;
-height: 100%;
+.focus-input {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
 
-top: 0;
-left: 0;
+    top: 0;
+    left: 0;
 
-pointer-events: none;
-color: #adadad;
-
+    pointer-events: none;
+    color: #adadad;
 }
-.focus-input ::before{
-    content: "";
+.focus-input ::before {
+    content: '';
     display: block;
     position: absolute;
     bottom: -2px;
@@ -105,10 +98,8 @@ color: #adadad;
     -webkit-transition: all 0.4s;
     -o-transition: all 0.4s;
     -moz-transition: all 0.4s;
-
-
 }
-.focus-input ::after{
+.focus-input ::after {
     font-size: 15px;
     color: #999999;
     line-height: 1.2;
@@ -120,7 +111,7 @@ color: #adadad;
     position: absolute;
     top: 16px;
     left: 0px;
-    
+
     padding-left: 5px;
 
     -webkit-transition: all 0.4s;
@@ -129,25 +120,25 @@ color: #adadad;
 }
 .input:focus {
     outline: 0;
-
 }
-.container-Enter-form-btn{
+.container-Enter-form-btn {
     display: flex;
     width: 100%;
     justify-content: center;
     margin-bottom: 3px;
 }
-  .Enter-form-btn{
+.Enter-form-btn {
     appearance: button;
     backface-visibility: hidden;
-    background-color: #FF9900;
+    background-color: #ff9900;
     border-radius: 6px;
     border-width: 0;
-    box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
+    box-shadow: rgba(50, 50, 93, 0.1) 0 0 0 1px inset, rgba(50, 50, 93, 0.1) 0 2px 5px 0,
+        rgba(0, 0, 0, 0.07) 0 1px 1px 0;
     box-sizing: border-box;
     color: #fff;
     cursor: pointer;
-    font-family: -apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Ubuntu,sans-serif;
+    font-family: -apple-system, system-ui, 'Segoe UI', Roboto, 'Helvetica Neue', Ubuntu, sans-serif;
     font-size: 15px;
     height: 38px;
     line-height: 1.15;
@@ -159,17 +150,17 @@ color: #adadad;
     text-align: center;
     text-transform: none;
     transform: translateZ(0);
-    transition: all .2s,box-shadow .08s ease-in;
+    transition: all 0.2s, box-shadow 0.08s ease-in;
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
     width: 129px;
-
-  }
-  .Enter-form-btn:disabled {
+}
+.Enter-form-btn:disabled {
     cursor: default;
-  }
-  
-  .Enter-form-btn:focus {
-    box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
-  }
+}
+
+.Enter-form-btn:focus {
+    box-shadow: rgba(50, 50, 93, 0.1) 0 0 0 1px inset, rgba(50, 50, 93, 0.2) 0 6px 15px 0,
+        rgba(0, 0, 0, 0.1) 0 2px 2px 0, rgba(50, 151, 211, 0.3) 0 0 0 4px;
+}

@@ -36,7 +36,9 @@ export default function Login() {
                             <span className="focus-input" data-placeholder="Password"></span>
                         </div>
                         <div className="container-login-form-btn">
-                            <button  onClick={() => navigate('/home', { replace: true })} className="login-form-btn">Login</button>
+                            <button onClick={() => navigate('/home', { replace: true })} className="login-form-btn">
+                                Login
+                            </button>
                         </div>
                         <div className="text-center"></div>
                         <span className="txt1">Não possui cadastro?{'  '}</span>

@@ -28,7 +28,7 @@ export default function AppRoutes(props) {
                 <Route path={API_URL + '/enter'} element={<IndexLayout />}>
                     <Route index element={<Enter />} />
                 </Route>
-                
+
                 <Route path={API_URL + '/home'} element={<IndexLayout />}>
                     <Route index element={<Home />} />
                 </Route>
