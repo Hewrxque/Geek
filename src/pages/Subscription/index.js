@@ -1,11 +1,12 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useHistory  } from 'react-router-dom';
 import IMG from '../../assets/geek.svg';
 import QR from '../../assets/Visitante.png';
 import './styles.css';
 
 export default function Subscription() {
     const navigate = useNavigate();
+    
     return (
         <div className="container">
             <div className="container-Subscription">
@@ -15,11 +16,25 @@ export default function Subscription() {
                             className="Subscription-form-title"
                             style={{ display: 'flex', position: 'absolute', height: '80px' }}
                         >
-                            <img src={IMG} alt="Geek" />
+                            <img src={IMG} alt="Geek"  onClick={() =>  navigate('/home')} />
                         </span>
 
                         <div className="Subscription-form-t">
-                            <span className="txt1">Inscrição</span>
+                            <div style={{display: "flex", marginLeft: "180px"}}>
+                                <button
+                                    onClick={() => navigate("/home")}
+                                    style={{
+                                        backgroundColor: 'transparent',
+                                        border: 'none',
+                                        color: 'white',
+                                        textDecoration: 'none'
+                                    }}
+                                >
+                                    ←
+                                </button>
+                                <div style={{marginLeft: "1rem"}}></div>
+                                <span className="txt1">Inscrição</span>
+                            </div>
                         </div>
 
                         <form className="Enter-form">

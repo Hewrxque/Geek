@@ -13,8 +13,9 @@ export default function Home() {
                         <span
                             className="Home-form-title"
                             style={{ display: 'flex', position: 'absolute', height: '80px' }}
+                           
                         >
-                            <img src={IMG} alt="Geek" />
+                            <img src={IMG} alt="Geek"  onClick={() =>  navigate('/home')} />
                         </span>
 
                         <div
@@ -28,8 +29,9 @@ export default function Home() {
                                 alignItems: 'center'
                             }}
                         >
+
                             <div className="container-Home-form-btn" style={{ padding: '5px' }}>
-                                <button className="Home-form-btn">Inscrição</button>
+                                <button className="Home-form-btn"  onClick={() => navigate('/subscription')}>Inscrição</button>
                             </div>
                             <div className="container-Home-form-btn" style={{ padding: '5px' }}>
                                 <button className="Home-form-btn">Feed</button>
@@ -39,11 +41,10 @@ export default function Home() {
                             </div>
 
                             <div
-                                onClick={() => navigate('/', { replace: true })}
                                 className="container-Home-form-btn"
                                 style={{ padding: '5px' }}
                             >
-                                <button className="Home-form-btn">Sair</button>
+                                <button className="Home-form-btn" onClick={() => navigate('/login')}>Sair</button>
                             </div>
                         </div>
                     </form>
