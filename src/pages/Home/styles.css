@@ -149,7 +149,7 @@
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
-    width: 30%;
+    width: 500px;
 }
 .Home-form-btn:disabled {
     cursor: default;
