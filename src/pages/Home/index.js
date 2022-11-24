@@ -8,47 +8,40 @@ export default function Home() {
     return (
         <div className="container">
             <div className="container-Home">
-                <div className="wrap-Home">
-                    <form className="Home-form" style={{ height: '100%', width: '100%' }}>
-                        <span
-                            className="Home-form-title"
-                            style={{ display: 'flex', position: 'absolute', height: '80px' }}
-                           
-                        >
-                            <img src={IMG} alt="Geek"  onClick={() =>  navigate('/home')} />
-                        </span>
-
-                        <div
-                            style={{
-                                display: 'flex',
-                                width: '100%',
-                                height: '100%',
-                                whiteSpace: 'normal',
-                                flexFlow: 'row wrap',
-                                flexWrap: 'wrap',
-                                alignItems: 'center'
-                            }}
-                        >
-
-                            <div className="container-Home-form-btn" style={{ padding: '5px' }}>
-                                <button className="Home-form-btn"  onClick={() => navigate('/subscription')}>Inscrição</button>
-                            </div>
-                            <div className="container-Home-form-btn" style={{ padding: '5px' }}>
-                                <button className="Home-form-btn">Feed</button>
-                            </div>
-                            <div className="container-Home-form-btn" style={{ padding: '5px' }}>
-                                <button className="Home-form-btn">Parceiros</button>
-                            </div>
-
-                            <div
-                                className="container-Home-form-btn"
-                                style={{ padding: '5px' }}
-                            >
-                                <button className="Home-form-btn" onClick={() => navigate('/login')}>Sair</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
+                <span
+                    className="Home-form-title"
+                    style={{
+                        display: 'flex',
+                        position: 'absolute',
+                        top: '0',
+                        left: '0',
+                        height: '80px',
+                        margin: '15px'
+                    }}
+                >
+                    <img src={IMG} alt="Geek" onClick={() => navigate('/home')} />
+                </span>
+                <form className="Home-form" style={{ height: '100%', width: '100%', padding: '50px' }}>
+                    <div
+                        style={{
+                            display: 'flex',
+                            position: 'relative',
+                            width: '100%',
+                            justifyContent: 'center',
+                            flexFlow: 'row wrap',
+                            alignItems: 'center'
+                        }}
+                    >
+                        <button className="Home-form-btn" onClick={() => navigate('/subscription')}>
+                            Inscrição
+                        </button>
+                        <button className="Home-form-btn">Feed</button>
+                        <button className="Home-form-btn">Parceiros</button>
+                        <button className="Home-form-btn" onClick={() => navigate('/login')}>
+                            Sair
+                        </button>
+                    </div>
+                </form>
             </div>
         </div>
     );
