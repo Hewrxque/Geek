@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import { useNavigate, useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import IMG from '../../assets/geek.svg';
 import QR from '../../assets/Visitante.png';
 import './styles.css';
