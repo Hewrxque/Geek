@@ -22,7 +22,7 @@ export default function Register() {
         email: ''
     });
 
-    const RegisterReq = async (data) => {
+    async function RegisterReq(data) {
         const testaCPF = validate(apenasNumeros(data.cpf));
         if (!testaCPF) {
             Toast.error('Digite um cpf válido');
@@ -100,7 +100,6 @@ export default function Register() {
         <div className="container">
             <div className="container-register">
                 <div className="wrap-register">
-                <div className="register-form">
                     <form className="register-form" action="#">
                         <button
                             onClick={() => navigate('/', { replace: true })}
@@ -165,14 +164,12 @@ export default function Register() {
                                 onChange={(e) => setData({ ...data, senha: e.target.value })}
                             />
                         </div>
-                        
-                    </form>
-                    <div className="container-register-form-btn">
+                        <div className="container-register-form-btn">
                             <button onClick={() => RegisterReq()} className="register-form-btn">
                                 Criar Conta
                             </button>
                         </div>
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>
