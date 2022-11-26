@@ -7,8 +7,6 @@ import './styles.css';
 import { validate } from 'gerador-validador-cpf';
 import axios from 'axios';
 
-import {API_BASE_URL} from '../../constants';
-
 import Toast from '../../util/toast';
 
 export default function Register() {
@@ -30,26 +28,35 @@ export default function Register() {
         }
 
         const dataToSave = {
-            nome:  removeNumeros(removeCaracteres(data.nome.toUpperCase())),
+            nome: removeNumeros(removeCaracteres(data.nome.toUpperCase())),
             cpf: apenasNumeros(data.cpf),
             telefone: apenasNumeros(data.telefone),
             senha: data.senha,
             email: data.email
-        }
+        };
 
-        await axios.post(`${API_BASE_URL}/users/register`, {
+       const result = await axios
+            .post(`http://3.215.218.8/api/v1/users/register`, {
                 ...dataToSave
             })
             .then(function (response) {
-                if(response.status !== 200){
-                    Toast.error(response.data.message)
+                if (response.status !== 200) {
+                    Toast.error(response.data.message);
                 }
                 Toast.sucess(response.data.message);
-                navigate('/login', { replace: true })
+                navigate('/login', { replace: true });
+                return true;
             })
             .catch(function (error) {
                 Toast.error(error.response.data.message);
+                return false;
             });
+
+            if(!result){
+                return false
+            }
+            return true
+
     }
 
     const maskCPF = (value) => {
@@ -100,76 +107,78 @@ export default function Register() {
         <div className="container">
             <div className="container-register">
                 <div className="wrap-register">
-                    <form className="register-form" action="#">
-                        <button
-                            onClick={() => navigate('/', { replace: true })}
-                            style={{
-                                backgroundColor: 'transparent',
-                                border: 'none',
-                                color: 'white',
-                                textDecoration: 'none'
-                            }}
-                        >
-                            ←
-                        </button>
-                        <span className="register-form-title">
-                            <img src={IMG} alt="Geek" />
-                        </span>
-                        <span className="register-form-t">Nome completo</span>
-                        <div className="wrap-input1">
-                            <input
-                                className="input"
-                                type="text"
-                                value={data.nome.toUpperCase()}
-                                onChange={(e) => mudarValorNome(e.target.value)}
-                            />
-                        </div>
+                    <div className="register-form">
+                        <form className="register-form">
+                            <button
+                                onClick={() => navigate('/', { replace: true })}
+                                style={{
+                                    backgroundColor: 'transparent',
+                                    border: 'none',
+                                    color: 'white',
+                                    textDecoration: 'none'
+                                }}
+                            >
+                                ←
+                            </button>
+                            <span className="register-form-title">
+                                <img src={IMG} alt="Geek" />
+                            </span>
+                            <span className="register-form-t">Nome completo</span>
+                            <div className="wrap-input1">
+                                <input
+                                    className="input"
+                                    type="text"
+                                    value={data.nome.toUpperCase()}
+                                    onChange={(e) => mudarValorNome(e.target.value)}
+                                />
+                            </div>
 
-                        <span className="register-form-t">CPF</span>
-                        <div className="wrap-input1">
-                            <input
-                                className="input"
-                                type="text"
-                                value={data.cpf}
-                                onChange={(e) => mudarValorCPF(e.target.value)}
-                            />
-                        </div>
+                            <span className="register-form-t">CPF</span>
+                            <div className="wrap-input1">
+                                <input
+                                    className="input"
+                                    type="text"
+                                    value={data.cpf}
+                                    onChange={(e) => mudarValorCPF(e.target.value)}
+                                />
+                            </div>
 
-                        <span className="register-form-t">E-mail</span>
-                        <div className="wrap-input1">
-                            <input
-                                className="input"
-                                type="email"
-                                value={data.email}
-                                onChange={(e) => mudarValorEmail(e.target.value)}
-                            />
-                        </div>
+                            <span className="register-form-t">E-mail</span>
+                            <div className="wrap-input1">
+                                <input
+                                    className="input"
+                                    type="email"
+                                    value={data.email}
+                                    onChange={(e) => mudarValorEmail(e.target.value)}
+                                />
+                            </div>
 
-                        <span className="register-form-t">Celular</span>
-                        <div className="wrap-input1">
-                            <input
-                                className="input"
-                                type="Telefone"
-                                value={data.telefone}
-                                onChange={(e) => setData({ ...data, telefone: maskTelefone(e.target.value) })}
-                            />
-                        </div>
+                            <span className="register-form-t">Celular</span>
+                            <div className="wrap-input1">
+                                <input
+                                    className="input"
+                                    type="Telefone"
+                                    value={data.telefone}
+                                    onChange={(e) => setData({ ...data, telefone: maskTelefone(e.target.value) })}
+                                />
+                            </div>
 
-                        <span className="register-form-t">Senha</span>
-                        <div className="wrap-input1">
-                            <input
-                                className="input"
-                                type="password"
-                                value={data.senha}
-                                onChange={(e) => setData({ ...data, senha: e.target.value })}
-                            />
-                        </div>
+                            <span className="register-form-t">Senha</span>
+                            <div className="wrap-input1">
+                                <input
+                                    className="input"
+                                    type="password"
+                                    value={data.senha}
+                                    onChange={(e) => setData({ ...data, senha: e.target.value })}
+                                />
+                            </div>
+                        </form>
                         <div className="container-register-form-btn">
-                            <button onClick={() => RegisterReq()} className="register-form-btn">
+                            <button onClick={() => RegisterReq(data)} className="register-form-btn">
                                 Criar Conta
                             </button>
                         </div>
-                    </form>
+                    </div>
                 </div>
             </div>
         </div>

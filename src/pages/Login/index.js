@@ -3,7 +3,6 @@ import axios from 'axios';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import IMG from '../../assets/geek.svg';
-import { API_BASE_URL } from '../../constants';
 import Toast from '../../util/toast';
 import './styles.css';
 
@@ -38,7 +37,7 @@ export default function Login() {
         };
 
         await axios
-            .post(`${API_BASE_URL}/auth/login`, {
+            .post(`http://3.215.218.8/api/v1/auth/login`, {
                 ...dataToLogin
             })
             .then(function (response) {
