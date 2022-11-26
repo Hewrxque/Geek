@@ -14,6 +14,9 @@ import Enter from './routes/Enter';
 import Home from './pages/Home';
 import Subscription from './pages/Subscription';
 
+import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer } from 'react-toastify';
+
 
 export default function AppRoutes(props) {
     return (
@@ -37,6 +40,17 @@ export default function AppRoutes(props) {
                 <Route path={API_URL + '/register'} element={<Register />} />
                 <Route path="*" element={<h1>Página não encontrada</h1>} />
             </Routes>
+            <ToastContainer
+                position="bottom-center"
+                autoClose={5000}
+                hideProgressBar={true}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+            />
         </>
     );
 }

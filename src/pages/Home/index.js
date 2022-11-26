@@ -37,7 +37,7 @@ export default function Home() {
                         </button>
                         <button className="Home-form-btn">Feed</button>
                         <button className="Home-form-btn">Parceiros</button>
-                        <button className="Home-form-btn" onClick={() => navigate('/login')}>
+                        <button className="Home-form-btn" onClick={() => navigate('/', { replace: true })}>
                             Sair
                         </button>
                     </div>
